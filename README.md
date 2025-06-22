@@ -53,7 +53,7 @@ The final FLAN-T5 model demonstrated superior generalization and understanding o
 
 ```bash
 git clone https://github.com/tomunizua/breast_cancer-qa_chatbot.git
-cd breast_cancer-qa_bot
+cd breast_cancer-qa_chatbot
 ```
 
 ### 2. Install dependencies
