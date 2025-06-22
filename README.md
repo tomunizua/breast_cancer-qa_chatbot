@@ -75,11 +75,12 @@ Watch a demo of the chatbot in action here:
 ## 💬 Example Conversations
 
 ![alt text](<assets/Screenshot 2025-06-20 015731.png>)
-
+![alt text](<assets/Screenshot 2025-06-20 015731 (2).png>)
 ---
 
 ## 📌 Notes
 
+- If you're unable to access my Colab notebook directly from Github, kindly follow this link instead : [Colab Notebook](https://colab.research.google.com/drive/1cH5JEJ9iwCGOY6-8wx7b9Es1ENzNkTs9?usp=sharing)
 - Model trained and evaluated using PyTorch & Hugging Face's `Trainer`.
 - Uses `evaluate` library to compute BLEU, SQuAD, and ROUGE metrics.
 - For low-resource training, the use of gradient accumulation and early stopping proved essential.
