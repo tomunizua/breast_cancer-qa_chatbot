@@ -4,7 +4,7 @@ This project fine-tunes Google's **FLAN-T5-Base** model on a domain-specific dat
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 The dataset used— [grasool/breast-cancer-QAs-llama](https://huggingface.co/datasets/grasool/breast-cancer-QAs-llama) — was sourced from Hugging Face and contains 300+ high-quality medical QA pairs originally formatted in the [INST]...[/INST] chat structure used for LLaMA models.  
 
@@ -24,6 +24,8 @@ Final configuration:
 - **Batch Size**: 1  
 - **Eval Strategy**: per epoch  
 - **Early Stopping**: patience 5  
+- **Gradient Accumulation**: 8 steps
+- You can find the model on Hugging face here: https://huggingface.co/tomunizua/breast_cancer-qa_chatbot
 
 ---
 
@@ -72,8 +74,7 @@ streamlit run app.py
 
 ## 🎥 Demo Video
 
-Watch a demo of the chatbot in action here:  
-📹 [Demo Video](https://your-demo-video-link.com)
+Link: https://youtu.be/hgrggMWSkG0 
 
 ---
 
