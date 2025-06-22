@@ -33,6 +33,14 @@ Model performance was evaluated using a combination of metrics. Below is the exp
 
 ![alt text](assets/image.png)
 
+- Validation loss: Cross-entropy loss to monitor training effectiveness.
+- BLEU for n-gram overlap.
+- ROUGE-1, 2, L for content similarity.
+- SQuAD F1 and Exact Match (EM) to capture QA-specific correctness.
+- Perplexity to measure fluency and confidence.
+- Qualitative Testing: Several test conversations demonstrated the chatbot’s ability to provide relevant, coherent, and empathetic responses to domain-related queries.
+
+
 The final FLAN-T5 model demonstrated superior generalization and understanding of medical language, outperforming smaller or shorter-trained models across all evaluation metrics.
 
 ---
@@ -54,10 +62,7 @@ pip install -r requirements.txt
 
 ### 3. Access the Chatbot
 
-The chatbot is publicly accessible via **Streamlit**:  
-🌐 [Launch Chatbot](https://your-streamlit-link.streamlit.app)
-
-You can also run it locally by executing:
+You can run it locally by executing:
 
 ```bash
 streamlit run app.py

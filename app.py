@@ -105,10 +105,11 @@ if prompt := st.chat_input("Type your question here"):
 
      # Bot response
     with st.chat_message("assistant", avatar="🎀"):
-        if is_greeting(prompt):
-            response = "Hi there! I'm your Breast Cancer Support Pal. How can I assist you today? 💕"
-        else:
-            response = generate_answer(prompt)
+        with st.spinner("Thinking..."):
+            if is_greeting(prompt):
+                response = "Hi there! I'm your Breast Cancer Support Pal. How can I assist you today? 💕"
+            else:
+                response = generate_answer(prompt)
         st.markdown(response)
 
     st.session_state.messages.append({"role": "assistant", "content": response})
