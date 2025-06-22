@@ -4,6 +4,7 @@ import time
 import os
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+os.environ["STREAMLIT_WATCHER_TYPE"] = "none"
 
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
